@@ -1,6 +1,6 @@
 FROM node:16-alpine3.11
 
-RUN apk add nodejs npm openjdk8
+RUN apk add --no-cache python3 nodejs npm openjdk8
 RUN mkdir /android 
 COPY android /android
 
