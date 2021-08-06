@@ -7,6 +7,7 @@ COPY android /android
 ENV ANDROID_HOME="/android"
 ENV PATH="$PATH:$ANDROID_HOME/cmdline-tools/tools/bin"
 ENV PATH="$PATH:$ANDROID_HOME/platform-tools"
+ENV PATH="$PATH:$ANDROID_HOME/emulator/"
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
 
 RUN yes | sdkmanager --install "platform-tools"
